@@ -1,0 +1,165 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40382b7e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e4c
+entry 0x403cc71a
+[0;32mI (15) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (15) boot: compile time Nov 29 2024 14:09:18[0m
+[0;32mI (16) boot: chip revision: v0.4[0m
+[0;32mI (19) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (24) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (29) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (39) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a490h ( 42128) map[0m
+[0;32mI (91) esp_image: segment 1: paddr=0001a4b8 vaddr=3fc8cc00 size=013b4h (  5044) load[0m
+[0;32mI (94) esp_image: segment 2: paddr=0001b874 vaddr=40380000 size=047a4h ( 18340) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=19950h (104784) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=00039978 vaddr=403847a4 size=08414h ( 33812) load[0m
+[0;32mI (137) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (149) cpu_start: Unicore app[0m
+[0;32mI (157) cpu_start: Pro cpu start user code[0m
+[0;32mI (157) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (157) app_init: Application information:[0m
+[0;32mI (160) app_init: Project name:     assignment1[0m
+[0;32mI (165) app_init: App version:      1[0m
+[0;32mI (170) app_init: Compile time:     Nov 29 2024 14:09:11[0m
+[0;32mI (176) app_init: ELF file SHA256:  1fa683783...[0m
+[0;32mI (181) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (187) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (192) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (197) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (201) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (209) heap_init: At 3FC8EED0 len 00031130 (196 KiB): RAM[0m
+[0;32mI (215) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (222) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (229) heap_init: At 50000200 len 00001DE8 (7 KiB): RTCRAM[0m
+[0;32mI (236) spi_flash: detected chip: generic[0m
+[0;32mI (240) spi_flash: flash io: dio[0m
+[0;33mW (244) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (257) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (267) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (276) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (282) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (290) main_task: Calling app_main()[0m
+[0;32mI (290) BMP280: Initializing BMP280...[0m
+[0;32mI (300) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (310) IR: IR Sensor State: LOW
+[0m
+[0;32mI (310) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (320) adc: ADC Value: 25
+[0m
+[0;32mI (320) BMP280: Temperature: 28.23 °C[0m
+[0;32mI (330) main_task: Returned from app_main()[0m
+[0;32mI (1320) adc: ADC Value: 26
+[0m
+[0;32mI (2310) IR: IR Sensor State: LOW
+[0m
+[0;32mI (2320) adc: ADC Value: 24
+[0m
+[0;32mI (3320) adc: ADC Value: 25
+[0m
+[0;32mI (3330) BMP280: Temperature: 28.23 °C[0m
+[0;32mI (4310) IR: IR Sensor State: LOW
+[0m
+[0;32mI (4320) adc: ADC Value: 25
+[0m
+[0;32mI (5320) adc: ADC Value: 25
+[0m
+[0;32mI (6310) IR: IR Sensor State: LOW
+[0m
+[0;32mI (6320) adc: ADC Value: 23
+[0m
+[0;32mI (6330) BMP280: Temperature: 28.24 °C[0m
+[0;32mI (7320) adc: ADC Value: 23
+[0m
+[0;32mI (8310) IR: IR Sensor State: HIGH
+[0m
+[0;32mI (8320) adc: ADC Value: 23
+[0m
+[0;32mI (9320) adc: ADC Value: 26
+[0m
+[0;32mI (9330) BMP280: Temperature: 28.22 °C[0m
+[0;32mI (10310) IR: IR Sensor State: LOW
+[0m
+[0;32mI (10320) adc: ADC Value: 25
+[0m
+[0;32mI (11320) adc: ADC Value: 25
+[0m
+[0;32mI (12310) IR: IR Sensor State: LOW
+[0m
+[0;32mI (12320) adc: ADC Value: 24
+[0m
+[0;32mI (12330) BMP280: Temperature: 28.23 °C[0m
+[0;32mI (13320) adc: ADC Value: 21
+[0m
+[0;32mI (14310) IR: IR Sensor State: HIGH
+[0m
+[0;32mI (14320) adc: ADC Value: 41
+[0m
+[0;32mI (15320) adc: ADC Value: 24
+[0m
+[0;32mI (15330) BMP280: Temperature: 28.25 °C[0m
+[0;32mI (16310) IR: IR Sensor State: LOW
+[0m
+[0;32mI (16320) adc: ADC Value: 24
+[0m
+[0;32mI (17320) adc: ADC Value: 24
+[0m
+[0;32mI (18310) IR: IR Sensor State: LOW
+[0m
+[0;32mI (18320) adc: ADC Value: 25
+[0m
+[0;32mI (18330) BMP280: Temperature: 28.25 °C[0m
+[0;32mI (19320) adc: ADC Value: 25
+[0m
+[0;32mI (20310) IR: IR Sensor State: HIGH
+[0m
+[0;32mI (20320) adc: ADC Value: 27
+[0m
+[0;32mI (21320) adc: ADC Value: 27
+[0m
+[0;32mI (21330) BMP280: Temperature: 28.24 °C[0m
+[0;32mI (22310) IR: IR Sensor State: HIGH
+[0m
+[0;32mI (22320) adc: ADC Value: 27
+[0m
+[0;32mI (23320) adc: ADC Value: 26
+[0m
+[0;32mI (24310) IR: IR Sensor State: HIGH
+[0m
+[0;32mI (24320) adc: ADC Value: 26
+[0m
+[0;32mI (24330) BMP280: Temperature: 28.29 °C[0m
+[0;32mI (25320) adc: ADC Value: 25
+[0m
+[0;32mI (26310) IR: IR Sensor State: HIGH
+[0m
+[0;32mI (26320) adc: ADC Value: 33
+[0m
+[0;32mI (27320) adc: ADC Value: 27
+[0m
+[0;32mI (27330) BMP280: Temperature: 28.28 °C[0m
+[0;32mI (28310) IR: IR Sensor State: LOW
+[0m
+[0;32mI (28320) adc: ADC Value: 27
+[0m
+[0;32mI (29320) adc: ADC Value: 27
+[0m
+[0;32mI (30310) IR: IR Sensor State: LOW
+[0m
+[0;32mI (30320) adc: ADC Value: 26
+[0m
+[0;32mI (30330) BMP280: Temperature: 28.29 °C[0m
