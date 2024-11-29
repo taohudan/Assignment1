@@ -1,0 +1,122 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\titlelabel{\thetitle.\quad}
+\setcounter{secnumdepth}{3}
+\sectionfont{\normalsize}
+\subsectionfont{\normalsize}
+\usepackage{pdfpages}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{minted}
+\renewcommand{\thechapter}{\Roman{chapter}\space }
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\large\bfseries}{\chaptertitlename\ \thechapter}{10pt}{\Large}  
+\titlespacing{\chapter}{0pt}{0pt}{0pt}  
+
+%=======================
+% Adding the hyperref package for clickable links in ToC
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    filecolor=blue
+}
+
+% Change "Chapter" to "Lab"
+\renewcommand{\chaptername}{TP Embedded}
+
+%----------------------------- MATLAB setup
+\newcommand*{\underuparrow}[1]{\underset{\uparrow}{#1}}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{54, 69, 79}
+% ... (rest of the code setup)
+
+\usepackage{geometry}
+\geometry{bottom=2.5cm,top=2cm,left=2cm,right=2cm}
+\usepackage{setspace}
+%--------------------------------------
+
+% Other packages...
+\usepackage{amsfonts, amsmath, amssymb, amsthm}
+\usepackage{tikz, tcolorbox}
+\usepackage{enumitem}
+\usepackage{tasks}
+\usepackage{graphics}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{pgf-pie}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\renewcommand{\thesection}{\arabic{section}} 
+
+% Setup for the table of contents
+\usepackage{tocloft}
+\chapternumberfont{\large} 
+\chaptertitlefont{\Large}
+\usepackage[mathscr]{euscript}
+% ----------------------------------
+% Define custom colors for syntax highlighting
+\definecolor{keywordcolor}{rgb}{0.5, 0.5, 1}    % Light blue for keywords
+\definecolor{commentcolor}{rgb}{0.4, 0.8, 0.4}  % Light green for comments
+\definecolor{stringcolor}{rgb}{1, 0.6, 0.6}     % Light red for strings
+\definecolor{framecolor}{rgb}{0.6, 0.6, 0.6}    % Gray frame
+
+% Customize lstset with colors and appearance
+\lstset{
+    language=C,
+    backgroundcolor=\color{white},              % Set background to white
+    basicstyle=\ttfamily\footnotesize\color{black},  % Text in black
+    keywordstyle=\bfseries\color{keywordcolor}, % Keyword color
+    commentstyle=\itshape\color{commentcolor},  % Comment color
+    stringstyle=\color{stringcolor},            % String color
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    breaklines=true,
+    frame=single,                               % Frame around the code
+    rulecolor=\color{framecolor},               % Frame color
+    tabsize=4,
+    showspaces=false,
+    showstringspaces=false
+}
+%----------------------------------
+
+\title{Digital Circuit Design}
+\author{KOY DANIEL}
+\date{December 2022}
+\pgfplotsset{compat=1.18}
+\usepackage{chngcntr}
+%\counterwithin{figure}{section}
+\renewcommand\thefigure{\arabic{figure}}
+\setcounter{figure}{0}
+%-----------------------------------
+
+% Page numbering and ToC setup
+\begin{document}
+% \includepdf[scale=1]{TP4.pdf}
+% \includepdf[scale=1]{The Cover.pdf}
+\pagenumbering{roman}
+\onehalfspacing
+\captionsetup{labelfont=bf}
+\doublespacing
+% \tableofcontents % Table of contents will now be clickable
+% \addcontentsline{toc}{section}{\textbf{CONTENT}} % ToC linked
+\singlespacing
+\newpage
+\pagenumbering{arabic}
+\input{Assignment} 
+\end{document}
+
